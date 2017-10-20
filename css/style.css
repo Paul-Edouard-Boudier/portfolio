@@ -116,6 +116,10 @@ footer {
   width: 75%;
   background-size: cover;
 }
+
+.progress {
+  margin-top: 5px;
+}
  /*MEDIA QUERIES */
 
 @media screen and (max-width: 800px) {
