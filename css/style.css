@@ -18,14 +18,14 @@ body {
   margin: 0;
   background-image: url("../images/clean_textile.png");
 }
-header ul {
+header nav ul {
   padding-left: 0px;
   margin: 0;
 }
-header ul li {
+header nav ul li {
   padding: 0 40px;
 }
-header ul li a {
+header nav ul li a {
   font-size: 22px;
 }
 footer ul {
@@ -39,14 +39,19 @@ footer {
   padding-top: 5%;
 }
 /*/////////////////////////////*/
-
+.progress-bar {
+  /*margin-top: 10px;*/
+  margin-left: 2px;
+  border-radius: 2px;
+  height: 30px;
+}
 .list-no-style {
   list-style: none;
 }
 .link-no-style {
   text-decoration: none;
 }
-.link-no-style:hover {
+.navbar .navbar-brand:hover {
   color:#757575;
   text-decoration: none;
 }
@@ -71,6 +76,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.flex-container-perso {
+  display: flex;
 }
 .flex-wrap {
   flex-wrap: wrap;
@@ -119,6 +127,9 @@ footer {
 
 .progress {
   margin-top: 5px;
+}
+.icon {
+  font-size: 50px;
 }
  /*MEDIA QUERIES */
 

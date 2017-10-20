@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>Portofilio</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header>
-      <ul class="list-no-style flex-container">
-
-        <li><a class="link-no-style primary-text-color" href="#">Accueil</a></li>
-        <li><a class="link-no-style primary-text-color" href="#">Contact</a></li>
-      </ul>
+      <nav class="navbar fixed-top navbar-light bg-light">
+        <!-- <a class="navbar-brand" href="#">Fixed top</a> -->
+        <ul class="list-no-style flex-container">
+          <li><a class="navbar-brand link-no-style primary-text-color" href="#">Mon travail</a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color" href="#">Compétences</a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color" href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="flex-container flex-wrap section-container-full-height">
@@ -21,7 +25,7 @@
           <img src="http://fakeimg.pl/250x100/" alt="...">
         </div>
         <div class="half-size min-size-small" >
-          <h3>titre niveau 3</h3>
+          <h3>Paul-Edouard</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ex nihil excepturi obcaecati. Culpa, nostrum, praesentium. Similique blanditiis delectus eligendi distinctio non. Beatae temporibus neque perferendis error, est excepturi molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sed aliquid sit a nesciunt cumque, aperiam voluptatem reiciendis temporibus incidunt, voluptas iure! Nulla nisi necessitatibus quidem a officiis sunt, vel.</p>
         </div>
       </section>
@@ -44,29 +48,66 @@
           <p>video games hobies related</p>
         </div>
         <div class="col-4">
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-              60%
+          <div class="row">
+            <div class="col-2">
+              <i class="icon devicon-ruby-plain-wordmark colored"></i>
+            </div>
+            <div class="col-10">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                  Ruby On Rails 60%
+                </div>
+              </div>
             </div>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-              75%
+          <div class="row">
+            <div class="col-2">
+              <i class="icon devicon-html5-plain"></i>
+            </div>
+            <div class="col-10">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                  HTML 75%
+                </div>
+              </div>
             </div>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-              75%
+          <div class="row">
+            <div class="col-2">
+              <i class="icon devicon-css3-plain"></i>
+            </div>
+            <div class="col-10">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                  CSS 75%
+                </div>
+              </div>
             </div>
           </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
-              25%
+          <div class="row">
+            <div class="col-2">
+              <i class="icon devicon-jquery-plain"></i>
+            </div>
+            <div class="col-10">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                  jQuery 25%
+                </div>
+              </div>
             </div>
           </div>
-
-        <!-- </div> -->
-          <p>Ruby HTML CSS icon + level de compétence</p>
+          <div class="row">
+            <div class="col-2">
+              <i class="icon devicon-mysql-plain"></i>
+            </div>
+            <div class="col-10">
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                  MySQL 25%
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-4 flex-container">
           <div><p>Know your online rights</p>
