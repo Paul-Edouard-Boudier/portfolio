@@ -7,6 +7,7 @@
 .primary-text-color    { color: #212121; }
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
+.white                 { color: white;}
 
 
 /*Style on non reusable items*/
@@ -16,7 +17,7 @@ header {
 }
 body {
   margin: 0;
-  background-image: url("../images/clean_textile.png");
+  background-image: url("../images/back-pattern.png");
 }
 header nav ul {
   padding-left: 0px;
@@ -39,6 +40,37 @@ footer {
   padding-top: 5%;
 }
 /*/////////////////////////////*/
+
+
+/*   /!\ PROGRESS BAR /!\    */
+.tooltip{
+  position:relative;
+  float:right;
+}
+.tooltip > .tooltip-inner {background-color: #eebf3f; padding:5px 15px; color:rgb(23,44,66); font-weight:bold; font-size:13px;}
+.popOver + .tooltip > .tooltip-arrow {	border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #eebf3f;}
+
+section{
+  margin:100px auto;
+  height:1000px;
+}
+.progress{
+  border-radius:0;
+  overflow:visible;
+}
+.progress-bar{
+   background:rgb(23,44,60);
+  -webkit-transition: width 1.5s ease-in-out;
+  transition: width 1.5s ease-in-out;
+}
+
+
+/*     ///////////////////   */
+.first-part {
+  /*background: -webkit-linear-gradient(0deg, rgb(58, 123, 213), rgb(96, 125, 139));*/
+  /*background: linear-gradient(180deg, rgb(58, 123, 213), rgb(96, 125, 139));*/
+  background: url('../images/work-station-1.jpg')
+}
 .progress-bar {
   /*margin-top: 10px;*/
   margin-left: 2px;
@@ -92,6 +124,11 @@ footer {
 .min-size-small {
   min-width: 250px;
 }
+
+/*.second-part {
+  background: -webkit-linear-gradient(90deg, rgb(96, 125, 139), rgb(58, 123, 213));
+  background: linear-gradient(180deg, rgb(96, 125, 139), rgb(58, 123, 213));
+}*/
 .section-container-full-height {
   padding: 0 10%;
   height: 100vh;
@@ -99,8 +136,64 @@ footer {
 .section-container{
   padding: 1% 10%;
 }
+   /*    /!\ CARDS /!\    */
+
+.card{
+  height: 200px;
+  width: 200px;
+  border-radius: 0;
+  padding: 0;
+}
+.csgo {
+  background: url('../images/csgo.jpg');
+  background-size: cover !important;
+  background-position: center;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+
+}
+.lol {
+  background: url('../images/leagueoflegends.jpg');
+  background-size: cover !important;
+  background-position: center;
+  border-bottom: 1px solid white;
+}
+.sport {
+  background: url('../images/rugby-lou.jpg');
+  background-size: cover !important;
+  background-position: center;
+}
+.online-courses {
+  background: url('../images/learning.jpg');
+  background-size: cover !important;
+  background-position: center;
+  border-bottom: 1px solid white;
+}
+
+/* Transition sur les images
+
+.portfolio img {
+  height:200px; margin-top:20px; margin-bottom:20px; opacity:0.5;-webkit-transition: all 1s ease;  Safari et Chrome
+  -moz-transition: all 1s ease; Firefox
+  -ms-transition: all 1s ease;  Internet Explorer 9
+  -o-transition: all 1s ease;  Opera
+  transition: all 1s ease;
+}
+.portfolio img:hover {
+  opacity:1;-webkit-transform:scale(1.25);  Safari et Chrome
+  -moz-transform:scale(1.25);  Firefox
+  -ms-transform:scale(1.25);  Internet Explorer 9
+  -o-transform:scale(1.25);  Opera
+  transform:scale(1.25);
+}*/
+
+    /*//////////////*/
+
+
 .footer {
-  background-color: #b2ebf2;
+  /*background: -webkit-linear-gradient(90deg, rgb(0, 188, 212), rgb(96, 125, 139));*/
+  /*background: linear-gradient(180deg, rgb(0, 188, 212), rgb(96, 125, 139));*/
+  background-color: #bdbdbd;
 }
 .links:hover {
   transform: scale(1.1);
@@ -110,6 +203,10 @@ footer {
 }
 .fa-linkedin:hover {
   color: #007BB6;
+}
+.about {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .card-link{
