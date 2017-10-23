@@ -223,10 +223,7 @@ footer {
   justify-content: center;
   align-items: flex-end;
 }
-.whoami {
-  padding-top: 15px;
-  text-align: center;
-}
+
 .about {
   text-align: center;
   text-transform: uppercase;
