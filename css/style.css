@@ -16,6 +16,7 @@ header {
   background-color: #0097a7;
 }
 body {
+  font-family: 'Lato', sans-serif;
   margin: 0;
   background-image: url("../images/back-pattern.png");
 }
@@ -50,10 +51,10 @@ footer {
 .tooltip > .tooltip-inner {background-color: #eebf3f; padding:5px 15px; color:rgb(23,44,66); font-weight:bold; font-size:13px;}
 .popOver + .tooltip > .tooltip-arrow {	border-left: 5px solid transparent; border-right: 5px solid transparent; border-top: 5px solid #eebf3f;}
 
-section{
+/*section{
   margin:100px auto;
   height:1000px;
-}
+}*/
 .progress{
   border-radius:0;
   overflow:visible;
@@ -66,10 +67,16 @@ section{
 
 
 /*     ///////////////////   */
+#premier {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+}
 .first-part {
   /*background: -webkit-linear-gradient(0deg, rgb(58, 123, 213), rgb(96, 125, 139));*/
   /*background: linear-gradient(180deg, rgb(58, 123, 213), rgb(96, 125, 139));*/
-  background: url('../images/work-station-1.jpg')
+  background: url('../images/work-station-1.jpg');
+  background-size: cover;
 }
 .progress-bar {
   /*margin-top: 10px;*/
@@ -140,18 +147,22 @@ section{
 
 .card{
   height: 200px;
-  width: 200px;
+  width: 400px;
   border-radius: 0;
   padding: 0;
 }
 .csgo {
   background: url('../images/csgo.jpg');
   background-size: cover !important;
-  background-position: center;
+  /*background-position: center;*/
   border-bottom: 1px solid white;
-  border-left: 1px solid white;
-
+  /*border-left: 1px solid white;*/
 }
+/*.csgo:hover {
+  transform:scale(1.5,1.5);
+  transition-duration: 0,3s;
+}*/
+
 .lol {
   background: url('../images/leagueoflegends.jpg');
   background-size: cover !important;
@@ -162,6 +173,7 @@ section{
   background: url('../images/rugby-lou.jpg');
   background-size: cover !important;
   background-position: center;
+  border-bottom: 1px solid white;
 }
 .online-courses {
   background: url('../images/learning.jpg');
@@ -203,6 +215,17 @@ section{
 }
 .fa-linkedin:hover {
   color: #007BB6;
+}
+
+.flex-container-end {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+}
+.whoami {
+  padding-top: 15px;
+  text-align: center;
 }
 .about {
   text-align: center;

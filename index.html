@@ -2,7 +2,8 @@
 <html lang="fr_FR">
   <head>
     <meta charset="utf-8">
-    <title>Portofilio</title>
+    <title>Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -21,31 +22,37 @@
     </header>
     <main>
       <section class="flex-container flex-wrap section-container-full-height first-part">
-        <div class="half-size min-size-small flex-container" >
+        <!-- <div class="half-size min-size-small flex-container" >
           <img src="http://fakeimg.pl/250x100/" alt="...">
-        </div>
+        </div> -->
         <div class="half-size min-size-small" >
-          <h3 class="white">Paul-Edouard</h3>
-          <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ex nihil excepturi obcaecati. Culpa, nostrum, praesentium. Similique blanditiis delectus eligendi distinctio non. Beatae temporibus neque perferendis error, est excepturi molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sed aliquid sit a nesciunt cumque, aperiam voluptatem reiciendis temporibus incidunt, voluptas iure! Nulla nisi necessitatibus quidem a officiis sunt, vel.</p>
+          <h3 id="premier" class="white">Paul-Edouard <br> BOUDIER</h3>
+          <!-- <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet ex nihil excepturi obcaecati. Culpa, nostrum, praesentium. Similique blanditiis delectus eligendi distinctio non. Beatae temporibus neque perferendis error, est excepturi molestiae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sed aliquid sit a nesciunt cumque, aperiam voluptatem reiciendis temporibus incidunt, voluptas iure! Nulla nisi necessitatibus quidem a officiis sunt, vel.</p> -->
         </div>
       </section>
-      <section class="flex-container flex-wrap-reverse section-container-full-height">
-        <div class="half-size min-size-small">
-          <h3>Smiling Ted</h3>
-          <p>Responsable de la partie Back-End de ce site crée à 3 en 1semaine et demi après 3mois de formation, en Ruby On Rails, HTML, CSS, JavaScript </p>
+      <section>
+        <div class="whoami flex-container-end">
+          <p>Actuellement étudiant dans le but de devenir développeur web, j'ai à coeur d'apprendre tous les jours des nouvelles techniques et de nouveaux languages.</p>
+          <p>De par mon status actuel je ne dispose que de très peu d'expérience professionnelle hormis un site web développé en Ruby.</p>
         </div>
-        <div class="half-size min-size-small flex-container">
-          <a class="card-link" href="http://smiling-ted.herokuapp.com" target="_blank">
-            <!-- <div class="card">
-              <p>Other creations</p>
-              <img src="images/Smiling-Ted.png" alt="">
-            </div> -->
-          </a>
+        <div class="flex-container flex-wrap-reverse section-container-full-height">
+          <div class="half-size min-size-small">
+            <h3>Smiling Ted</h3>
+            <p>Responsable de la partie Back-End de ce site crée à 3 en 1 semaine et demi après 3mois de formation, en Ruby On Rails, HTML, CSS, JavaScript </p>
+          </div>
+          <div class="half-size min-size-small flex-container">
+            <a class="card-link" href="http://smiling-ted.herokuapp.com" target="_blank">
+              <!-- <div class="card">
+                <p>Other creations</p>
+                <img src="images/Smiling-Ted.png" alt="">
+              </div> -->
+            </a>
+          </div>
         </div>
       </section>
       <h3 class="about">A propos</h3>
       <section class="flex-wrap flex-container section-container">
-        <div class="col-4 flex-container flex-wrap">
+        <div class="col-6 flex-container flex-wrap">
           <div class="card half-size lol portfolio">
             <!-- <p>CSGO</p> -->
           </div>
@@ -60,73 +67,143 @@
           </div>
           <!-- div de 4 images collés avc un hover pour les selectionner et les agrandir: LoL, CSGO, Sport, Learning everyday(coursera / edx)  -->
         </div>
-        <div class="col-4">
-          <div class="row">
-            <div class="col-2">
-              <i class="icon devicon-ruby-plain-wordmark colored"></i>
+        <div class="col-6">
+          <div>
+            <p>Ma passion pour les jeux-vidéo ne m'empeche en aucun cas de pratiquer du sport régulièrement et d'approfondir mes connaissance.</p>
+          </div>
+          <div>
+            <div class="row">
+              <div class="col-2">
+                <i class="icon devicon-ruby-plain-wordmark colored"></i>
+              </div>
+              <div class="col-10">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    Ruby On Rails 60%
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="col-10">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                  Ruby On Rails 60%
+            <div class="row">
+              <div class="col-2">
+                <i class="icon devicon-html5-plain"></i>
+              </div>
+              <div class="col-10">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                    HTML 75%
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <i class="icon devicon-css3-plain"></i>
+              </div>
+              <div class="col-10">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                    CSS 75%
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <i class="icon devicon-jquery-plain"></i>
+              </div>
+              <div class="col-10">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                    jQuery 25%
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-2">
+                <i class="icon devicon-mysql-plain"></i>
+              </div>
+              <div class="col-10">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                    MySQL 25%
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-2">
-              <i class="icon devicon-html5-plain"></i>
-            </div>
-            <div class="col-10">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                  HTML 75%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-              <i class="icon devicon-css3-plain"></i>
-            </div>
-            <div class="col-10">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                  CSS 75%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-              <i class="icon devicon-jquery-plain"></i>
-            </div>
-            <div class="col-10">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
-                  jQuery 25%
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-2">
-              <i class="icon devicon-mysql-plain"></i>
-            </div>
-            <div class="col-10">
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
-                  MySQL 25%
-                </div>
-              </div>
-            </div>
-          </div>
+
+          <!-- /!\  CODE PEN PROGRESS BAR /!\ -->
+          <!-- <section>
+<div class="container">
+  <div class="row">
+    <div class="col-md-2 col-lg-2"></div>
+     <div class="col-md-8 col-lg-8">
+
+<div class="barWrapper">
+ <span class="progressText"><B>HTML5</B></span>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" >
+        <span  class="popOver" data-toggle="tooltip" data-placement="top" title="85%"> </span>
+</div>
+</div>
+
+<div class="barWrapper">
+ <span class="progressText"><B>CSS3</B></span>
+<div class="progress ">
+  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+     <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>
+  </div>
+
+</div>
+</div>
+
+<div class="barWrapper">
+ <span class="progressText"><B>BOOTSTRAP</B></span>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+     <span  class="popOver" data-toggle="tooltip" data-placement="top" title="65%"> </span>
+  </div>
+</div>
+</div>
+<div class="barWrapper">
+ <span class="progressText"><B>JQUERY</B></span>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+         <span  class="popOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>
+  </div>
+</div>
+</div>
+<div class="barWrapper">
+ <span class="progressText"><B>MYSQL</B></span>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+      <span  class="popOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>
+  </div>
+</div>
+</div>
+  <div class="barWrapper">
+ <span class="progressText"><B>PHP</B></span>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+      <span  class="popOver" data-toggle="tooltip" data-placement="top" title="75%"> </span>
+  </div>
+</div>
+</div>
+
+</div>
+     <div class="col-md-2 col-lg-2"></div>
+    </div>
+</div>
+  </section> -->
+          <!-- /!\ FIN COE PEN PROGRESS BAR /!\ -->
         </div>
-        <div class="col-4 flex-container">
+        <!-- <div class="col-4 flex-container">
           <div><p>meh, y mettre dans le footer</p>
           </div>
-          <!-- <a class="card-link-eff" href="https://www.eff.org/" target="_blank"></a> -->
-        </div>
+          <a class="card-link-eff" href="https://www.eff.org/" target="_blank"></a>
+        </div> -->
       </section>
     </main>
     <footer class="flex-wrap footer flex-container-footer primary-text-color section-container">
@@ -138,14 +215,19 @@
           </div>
         <ul class="list-no-style flex-container">
           <li class="links"><a href="https://github.com/Paul-Edouard-Boudier" target="_blank" class="link-no-style primary-text-color"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
-          <li class="links"><a href="" class="link-no-style primary-text-color"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+          <li class="links"><a href="https://www.linkedin.com/in/paul-edouard-boudier-a3328a139/" target="_blank" class="link-no-style primary-text-color"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
         </ul>
       </div>
       <div class="flex-container-right min-size-small half-size form">
-        <p>form to put here</p>
-        <p>blabla</p>
+        <!-- <p>form to put here</p>
+        <p>blabla</p> -->
         <small>Copyright 2017 PEB</small>
       </div>
     </footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous">
+  </script>
+  <script src="javascript/script.js"></script>
 </html>
