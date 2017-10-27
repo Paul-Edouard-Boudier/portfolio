@@ -65,6 +65,12 @@ footer {
   transition: width 1.5s ease-in-out;
 }
 
+.progress-bar {
+  /*margin-top: 10px;*/
+  margin-left: 2px;
+  border-radius: 2px;
+  height: 30px;
+}
 
 /*     ///////////////////   */
 #premier {
@@ -77,12 +83,6 @@ footer {
   /*background: linear-gradient(180deg, rgb(58, 123, 213), rgb(96, 125, 139));*/
   background: url('../images/work-station-1.jpg');
   background-size: cover;
-}
-.progress-bar {
-  /*margin-top: 10px;*/
-  margin-left: 2px;
-  border-radius: 2px;
-  height: 30px;
 }
 .list-no-style {
   list-style: none;
