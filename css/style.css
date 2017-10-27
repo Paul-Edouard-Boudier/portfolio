@@ -8,6 +8,7 @@
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
 .white                 { color: white;}
+.black                 { color: black;}
 
 
 /*Style on non reusable items*/
@@ -227,6 +228,11 @@ footer {
 .about {
   text-align: center;
   text-transform: uppercase;
+}
+.hobbies {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
 .card-link{
