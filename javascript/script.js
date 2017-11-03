@@ -40,13 +40,13 @@ $(document).ready(function() {
   if (localStorage.getItem("dotState") == null) {
     localStorage.setItem("dotState", "1");
     var number = localStorage.getItem("dotState");
-    $("div .round[data-dot!="+ number +"]").addClass("white-dot").removeClass("black");
-    $("div .round[data-dot="+ number +"]").addClass("black").removeClass("white-dot");
+    $("div .round[data-dot!="+ number +"]").addClass("white-dot").removeClass("black-dot");
+    $("div .round[data-dot="+ number +"]").addClass("black-dot").removeClass("white-dot");
   }
   else {
     var number = localStorage.getItem("dotState");
-    $("div .round[data-dot!="+ number +"]").addClass("white-dot").removeClass("black");
-    $("div .round[data-dot="+ number +"]").addClass("black").removeClass("white-dot");
+    $("div .round[data-dot!="+ number +"]").addClass("white-dot").removeClass("black-dot");
+    $("div .round[data-dot="+ number +"]").addClass("black-dot").removeClass("white-dot");
   }
 
   $("i[data-button='left'], i[data-button='right']").on("click", function(){
@@ -60,16 +60,16 @@ $(document).ready(function() {
       if ($("img[data-number=" + imageNumber + "]").length == 0) {
         $("img[data-number=" + length + "]").removeClass("hidden");
         $("img[data-number!=" + length + "]").addClass("hidden");
-        $("div .round[data-dot!=" + length + "]").removeClass("black").addClass("white-dot");
-        $("div .round[data-dot=" + length + "]").removeClass("white-dot").addClass("black");
+        $("div .round[data-dot!=" + length + "]").removeClass("black-dot").addClass("white-dot");
+        $("div .round[data-dot=" + length + "]").removeClass("white-dot").addClass("black-dot");
         localStorage.setItem("imageNumber", length);
         localStorage.setItem("dotState", length);
       }
       else {
         $("img[data-number!=" + imageNumber + "]").addClass("hidden");
         $("img[data-number=" + imageNumber + "]").removeClass("hidden");
-        $("div .round[data-dot!=" + dotNumber + "]").removeClass("black").addClass("white-dot");
-        $("div .round[data-dot=" + dotNumber + "]").removeClass("white-dot").addClass("black");
+        $("div .round[data-dot!=" + dotNumber + "]").removeClass("black-dot").addClass("white-dot");
+        $("div .round[data-dot=" + dotNumber + "]").removeClass("white-dot").addClass("black-dot");
       }
     }
     else {
@@ -80,16 +80,16 @@ $(document).ready(function() {
       if ($("img[data-number=" + imageNumber + "]").length == 0) {
         $("img[data-number='1']").removeClass("hidden");
         $("img[data-number!='1']").addClass("hidden");
-        $("div .round[data-dot!='1']").removeClass("black").addClass("white-dot");
-        $("div .round[data-dot='1']").removeClass("white-dot").addClass("black");
+        $("div .round[data-dot!='1']").removeClass("black-dot").addClass("white-dot");
+        $("div .round[data-dot='1']").removeClass("white-dot").addClass("black-dot");
         localStorage.setItem("imageNumber", "1");
         localStorage.setItem("dotState", "1");
       }
       else {
         $("img[data-number!=" + imageNumber + "]").addClass("hidden");
         $("img[data-number=" + imageNumber + "]").removeClass("hidden");
-        $("div .round[data-dot!=" + dotNumber + "]").removeClass("black").addClass("white-dot");
-        $("div .round[data-dot=" + dotNumber + "]").removeClass("white-dot").addClass("black");
+        $("div .round[data-dot!=" + dotNumber + "]").removeClass("black-dot").addClass("white-dot");
+        $("div .round[data-dot=" + dotNumber + "]").removeClass("white-dot").addClass("black-dot");
       };
     }
   });
@@ -99,8 +99,8 @@ $(document).ready(function() {
     $("img[data-number="+ number +" ]").removeClass("hidden");
     $("img[data-number!="+ number +"]").addClass("hidden");
     localStorage.setItem("imageNumber", number);
-    $("div .round[data-dot!="+ number +"]").removeClass("black").addClass("white-dot");
-    $("div .round[data-dot="+ number +"]").removeClass("white-dot").addClass("black");
+    $("div .round[data-dot!="+ number +"]").removeClass("black-dot").addClass("white-dot");
+    $("div .round[data-dot="+ number +"]").removeClass("white-dot").addClass("black-dot");
     localStorage.setItem("dotState", number);
   });
 });

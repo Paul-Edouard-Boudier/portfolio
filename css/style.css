@@ -263,10 +263,10 @@ footer {
 /*  /!\ SLIDER /!\*/
 
 .slider {
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   height: 50vh;
   width: 50vw;
-  background-color: black;
+  /*background-color: black;*/
 }
 .container-slider {
   display: flex;
@@ -301,7 +301,7 @@ img {
   cursor: pointer;
 }
 
-.black {
+.black-dot {
   background-color: black;
 }
 .white-dot {
