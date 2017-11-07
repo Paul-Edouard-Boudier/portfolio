@@ -103,4 +103,20 @@ $(document).ready(function() {
     $("div .round[data-dot="+ number +"]").removeClass("black-dot").addClass("white-dot");
     localStorage.setItem("dotState", number);
   });
+
+  $("a[data-lang='english'], a[data-lang='french']").on("click", function() {
+    var lang = $(this).data("lang");
+    if (lang == "english") {
+      $("div.english").removeClass("hidden");
+      $("div.french").addClass("hidden");
+      $("a.english").css("font-size","20px");
+      $("a.french").css("font-size","14px");
+    }
+    else {
+      $("div.english").addClass("hidden");
+      $("div.french").removeClass("hidden");
+      $("a.french").css("font-size","20px");
+      $("a.english").css("font-size","14px");
+    }
+  });
 });

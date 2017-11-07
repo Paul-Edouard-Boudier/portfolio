@@ -79,6 +79,13 @@ footer {
   font-family: 'Dancing Script', cursive;
   font-size: 45px;
 }
+
+a.french {
+  font-size: 20px;
+}
+a.english {
+  font-size: 14px;
+}
 .first-part {
   /*background: -webkit-linear-gradient(0deg, rgb(58, 123, 213), rgb(96, 125, 139));*/
   /*background: linear-gradient(180deg, rgb(58, 123, 213), rgb(96, 125, 139));*/
