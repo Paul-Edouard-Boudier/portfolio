@@ -111,12 +111,18 @@ $(document).ready(function() {
       $("div.french").addClass("hidden");
       $("a.english").css("font-size","20px");
       $("a.french").css("font-size","14px");
+      $("a[data-header='work']").html("Work");
+      $("a[data-header='skill'], h3[data-about='skill']").html("Skills");
+      $("h3[data-about='about']").html("About");
     }
     else {
       $("div.english").addClass("hidden");
       $("div.french").removeClass("hidden");
       $("a.french").css("font-size","20px");
       $("a.english").css("font-size","14px");
+      $("a[data-header='work']").html("Mon travail");
+      $("a[data-header='skill'], h3[data-about='skill']").html("Compétences");
+      $("h3[data-about='about']").html("À propos");
     }
   });
 });
