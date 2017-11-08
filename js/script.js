@@ -112,8 +112,8 @@ $(document).ready(function() {
       $("a.english").css("font-size","20px");
       $("a.french").css("font-size","14px");
       $("a[data-header='work']").html("Work");
-      $("a[data-header='skill'], h3[data-about='skill']").html("Skills");
-      $("h3[data-about='about']").html("About");
+      $("a[data-header='skill'], h2[data-about='skill']").html("Skills");
+      $("h2[data-about='about']").html("About");
     }
     else {
       $("div.english").addClass("hidden");
@@ -121,8 +121,8 @@ $(document).ready(function() {
       $("a.french").css("font-size","20px");
       $("a.english").css("font-size","14px");
       $("a[data-header='work']").html("Mon travail");
-      $("a[data-header='skill'], h3[data-about='skill']").html("Compétences");
-      $("h3[data-about='about']").html("À propos");
+      $("a[data-header='skill'], h2[data-about='skill']").html("Compétences");
+      $("h2[data-about='about']").html("À propos");
     }
   });
 });
