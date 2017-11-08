@@ -170,19 +170,19 @@ a.english:hover {
   border-radius: 0;
   padding: 0;
 }
-.csgo {
+/*.csgo {
   background: url('../images/csgo.jpg');
   background-size: cover !important;
-  /*background-position: center;*/
+  background-position: center;
   border-bottom: 1px solid white;
-  /*border-left: 1px solid white;*/
-}
+  border-left: 1px solid white;
+}*/
 /*.csgo:hover {
   transform:scale(1.5,1.5);
   transition-duration: 0,3s;
 }*/
 
-.lol {
+/*.lol {
   background: url('../images/leagueoflegends.jpg');
   background-size: cover !important;
   background-position: center;
@@ -199,7 +199,7 @@ a.english:hover {
   background-size: cover !important;
   background-position: center;
   border-bottom: 1px solid white;
-}
+}*/
 
 /* Transition sur les images
 
@@ -256,7 +256,11 @@ a.english:hover {
   display: flex;
   justify-content: center;
 }
-
+.about-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 .card-link{
   height: 250px;
   width: 75%;
