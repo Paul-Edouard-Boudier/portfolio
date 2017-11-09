@@ -11,10 +11,16 @@
   </head>
   <body>
     <header>
+      <?php
+        $locale = $_GET['locale'];
+
+        $filetrad = 'i18n/'. $locale .'.php';
+        require_once $filetrad;
+      ?>
       <nav class="navbar fixed-top navbar-light bg-light">
         <!-- <a class="navbar-brand" href="#">Fixed top</a> -->
         <ul class="list-no-style flex-container">
-          <li><a class="navbar-brand link-no-style primary-text-color" data-header="work" href="#work">Mon travail</a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color" data-header="work" href="#work"><?php $i18n['templates']['head']['work'] ?></a></li>
           <li><a class="navbar-brand link-no-style primary-text-color" data-header="skill" href="#skills">Compétences</a></li>
           <li><a class="navbar-brand link-no-style primary-text-color" href="#contact">Contact</a></li>
           <li><a class="navbar-brand link-no-style primary-text-color english" data-lang="english">English</a></li>
