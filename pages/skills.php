@@ -1,5 +1,5 @@
 
-<h2 data-about="skill" class="about">Compétences</h2>
+<h2 data-about="skill" class="about"><?= $i18n['pages']['skills']['h2'] ?></h2>
 <a name="skills"></a>
 <section class="flex-wrap flex-container section-container-full-height">
   <div class="col-6">

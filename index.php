@@ -1,7 +1,7 @@
 <?php
   require_once("templates/head.php");
-  require_once("templates/body.html");
-  require_once("pages/work.html");
-  require_once("pages/skills.html");
-  require_once("pages/about.html");
-  require_once("templates/foot.html");
+  require_once("templates/body.php");
+  require_once("pages/about.php");
+  require_once("pages/skills.php");
+  require_once("pages/work.php");
+  require_once("templates/foot.php");
