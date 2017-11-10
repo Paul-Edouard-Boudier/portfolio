@@ -77,3 +77,28 @@
     </div>
   </div>
 </section>
+<section class="flex-wrap flex-container section-slider ">
+  <div class="slider">
+    <div class="container-slider">
+      <i data-button="left" class="white arrows fa fa-2x fa-arrow-left" aria-hidden="true"></i>
+      <div class=" slider">
+        <div class="image">
+          <img data-number="1" class="hidden" src="images/csgo.jpg" alt="">
+          <img data-number="2" class="hidden" src="images/leagueoflegends.jpg" alt="">
+          <img data-number="3" class="hidden" src="images/learning.jpg" alt="">
+          <img data-number="4" class="hidden" src="images/rugby-lou.jpg" alt="">
+        </div>
+        <div class="container-slider">
+          <div data-dot="1" class="round white"></div>
+          <div data-dot="2" class="round white"></div>
+          <div data-dot="3" class="round white"></div>
+          <div data-dot="4" class="round white"></div>
+        </div>
+      </div>
+      <i data-button="right" class="white arrows fa fa-2x fa-arrow-right" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div>
+    <p><?= $i18n['pages']['work']['slider'] ?></p>
+  </div>
+</section>

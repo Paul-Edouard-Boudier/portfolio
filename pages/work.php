@@ -1,3 +1,4 @@
+<h2 data-about="skill" class="work"><?= $i18n['pages']['work']['h2'] ?></h2>
 <section>
   <a name="work"></a>
   <div class="flex-container flex-wrap-reverse section-container-full-height">

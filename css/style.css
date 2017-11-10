@@ -280,7 +280,11 @@ a.english:hover {
 .icon {
   font-size: 50px;
 }
-
+.work {
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10%;
+}
 
 /*  /!\ SLIDER /!\*/
 
