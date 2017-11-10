@@ -21,8 +21,8 @@
         <!-- <a class="navbar-brand" href="#">Fixed top</a> -->
         <ul class="list-no-style flex-container">
           <li><a class="navbar-brand link-no-style primary-text-color" data-header="work" href="#work"><?php $i18n['templates']['head']['work'] ?></a></li>
-          <li><a class="navbar-brand link-no-style primary-text-color" data-header="skill" href="#skills">Compétences</a></li>
-          <li><a class="navbar-brand link-no-style primary-text-color" href="#contact">Contact</a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color" data-header="skill" href="#skills"><?php $i18n['templates']['head']['skill'] ?></a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color" href="#contact"><?php $i18n['templates']['head']['contact'] ?></a></li>
           <li><a class="navbar-brand link-no-style primary-text-color english" data-lang="english">English</a></li>
           <li><a class="navbar-brand link-no-style primary-text-color french" data-lang="french">Français</a></li>
         </ul>

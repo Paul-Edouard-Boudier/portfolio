@@ -8,7 +8,9 @@
   $i18n = [
     'templates' => [
       'head' => [
-        'work' => "Mon travail"
+        'work' => "Mon travail",
+        'skill' => "Compétences",
+        'contact' => "Contact",
       ]
     ],
   ];
