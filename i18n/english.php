@@ -1,12 +1,13 @@
 <?php
-
-
   $i18n = [
     'templates' => [
       'head' => [
-        'work' => "Mon travail",
-        'skill' => "Compétences",
+        'work' => "Work",
+        'skill' => "Skills",
         'contact' => "Contact",
       ]
     ],
+  ];
+  $i18nn = [
+    'work' => "work"
   ];

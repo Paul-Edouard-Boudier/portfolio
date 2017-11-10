@@ -12,28 +12,25 @@
   <body>
     <header>
       <nav class="navbar fixed-top navbar-light bg-light">
-        <form action="head.php" method="GET">
-          <input type="submit" name="locale" value="english">
-        </form>
         <?php
         $locale = 'fr';
-        var_dump($locale);
-        echo "<br>";
         $locale = $_GET['locale'];
-        var_dump($locale);
-        echo "<br>";
-
-        $filetrad = 'i18n/' . $locale . '.php';
-        var_dump($filetrad);
+        $filetrad = "i18n/$locale.php";
         require_once $filetrad;
         ?>
         <!-- <a class="navbar-brand" href="#">Fixed top</a> -->
         <ul class="list-no-style flex-container">
-          <li><a class="navbar-brand link-no-style primary-text-color" data-header="work" href="#work"><?php $i18n['templates']['head']['work'] ?></a></li>
-          <li><a class="navbar-brand link-no-style primary-text-color" data-header="skill" href="#skills"><?php $i18n['templates']['head']['skill'] ?></a></li>
-          <li><a class="navbar-brand link-no-style primary-text-color" href="#contact"><?php $i18n['templates']['head']['contact'] ?></a></li>
-          <li><a class="navbar-brand link-no-style primary-text-color english" data-lang="english">English</a></li>
-          <li><a class="navbar-brand link-no-style primary-text-color french" data-lang="french">Français</a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color" data-header="work" href="#work"><?= $i18n['templates']['head']['work'] ?></a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color" data-header="skill" href="#skills"><?= $i18n['templates']['head']['skill'] ?></a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color" href="#contact"><?= $i18n['templates']['head']['contact'] ?></a></li>
+          <li>
+            <form action="index.php" method="GET">
+              <input type="submit" name="locale" value="english">
+              <input type="submit" name="locale" value="french">
+            </form>
+          </li>
+          <!-- <li><a class="navbar-brand link-no-style primary-text-color english" data-lang="english">English</a></li>
+          <li><a class="navbar-brand link-no-style primary-text-color french" data-lang="french">Français</a></li> -->
         </ul>
       </nav>
     </header>
