@@ -13,12 +13,13 @@
     <header>
       <nav class="navbar fixed-top navbar-light bg-light">
         <?php
-        $locale = 'fr';
-        $locale = $_GET['locale'];
+        $locale = 'french';
+        if (!empty($_GET['locale'])) {
+          $locale = $_GET['locale'];
+        }
         $filetrad = "i18n/$locale.php";
         require_once $filetrad;
         ?>
-        <!-- <a class="navbar-brand" href="#">Fixed top</a> -->
         <ul class="list-no-style flex-container">
           <li><a class="navbar-brand link-no-style primary-text-color" data-header="work" href="#work"><?= $i18n['templates']['head']['work'] ?></a></li>
           <li><a class="navbar-brand link-no-style primary-text-color" data-header="skill" href="#skills"><?= $i18n['templates']['head']['skill'] ?></a></li>
@@ -29,8 +30,6 @@
               <input type="submit" name="locale" value="french">
             </form>
           </li>
-          <!-- <li><a class="navbar-brand link-no-style primary-text-color english" data-lang="english">English</a></li>
-          <li><a class="navbar-brand link-no-style primary-text-color french" data-lang="french">Français</a></li> -->
         </ul>
       </nav>
     </header>

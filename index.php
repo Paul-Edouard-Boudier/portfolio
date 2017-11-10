@@ -1,4 +1,5 @@
 <?php
+  $locale = "french";
   require_once("templates/head.php");
   require_once("templates/body.php");
   require_once("pages/about.php");
