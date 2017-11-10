@@ -11,13 +11,22 @@
   </head>
   <body>
     <header>
-      <?php
-        $locale = $_GET['locale'];
-
-        $filetrad = 'i18n/'. $locale .'.php';
-        require_once $filetrad;
-      ?>
       <nav class="navbar fixed-top navbar-light bg-light">
+        <form action="head.php" method="GET">
+          <input type="submit" name="locale" value="english">
+        </form>
+        <?php
+        $locale = 'fr';
+        var_dump($locale);
+        echo "<br>";
+        $locale = $_GET['locale'];
+        var_dump($locale);
+        echo "<br>";
+
+        $filetrad = 'i18n/' . $locale . '.php';
+        var_dump($filetrad);
+        require_once $filetrad;
+        ?>
         <!-- <a class="navbar-brand" href="#">Fixed top</a> -->
         <ul class="list-no-style flex-container">
           <li><a class="navbar-brand link-no-style primary-text-color" data-header="work" href="#work"><?php $i18n['templates']['head']['work'] ?></a></li>
